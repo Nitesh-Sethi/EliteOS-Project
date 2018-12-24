@@ -1,0 +1,254 @@
+body {
+    background: #151515;
+    /* display: block; */
+}
+.icon {
+    display: block;
+}
+.icon > span {
+    color: #eee;
+    font-size: 18px;
+}
+.icon-elite {
+    border-radius: 50%;
+    width: 4%;
+    height: 4%;
+    margin: 8px 16px 0 72px;
+}
+/* nav bar */
+.nav-item {
+    padding: 12px;
+}
+ul.nav {
+    margin-right: 16px;
+}
+.nav-item:hover {
+    background: #0b0b0b;
+}
+/* EliteOS heading */
+.heading > h1 {
+    text-align: center;
+    color: #ddd;
+    margin: 42px;
+}
+.heading > h3 {
+    text-align: center;
+    color: #ddd;
+    margin-bottom: 42px;
+}
+/* button tag using flex */
+.content-center {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.content-center > button {
+    color: #28059C;
+    background: #2D84DC;
+    padding: 16px;
+    border: 0px;
+    border-radius: 8px;
+    font-weight: 500;
+}
+/* Team elite */
+.team-elite > h1 {
+    text-align: center;
+    color:  #2D84DC;
+    font-size: 64px;
+    font-weight: normal;
+    margin: 192px 0 32px 0;
+}
+.team-elite > hr {
+    width: 128px;
+    height: 3px;
+    background: #2D84DC;
+    border-radius: 12px;
+    margin-bottom: 42px;
+}
+.team-elite > h3 {
+    color: #585858;
+    text-align: center;
+}
+/* team elite persons */
+.meet-team > h1 {
+    text-align: center;
+    color:  #2D84DC;
+    font-size: 64px;
+    font-weight: normal;
+    margin: 192px 0 32px 0;
+}
+.meet-team > hr {
+    width: 128px;
+    height: 3px;
+    background: #2D84DC;
+    border-radius: 12px;
+    margin-bottom: 42px;
+}
+.meet-team > h3 {
+    color: #585858;
+    text-align: center;
+}
+
+/* TEAM MEMBERS */
+#team-members {
+    display: block;
+    margin-top: 120px;
+}
+#team-members > .person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.set-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 24px;
+}
+.person > h2 {
+    color: #ddd;
+    text-align: center;
+}
+.person > h3 {
+    color: #ddd;
+    text-align: center;
+}
+.person > #button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+}
+/* font awesome icon */
+.fa {
+    /* width: 40px; */
+    /* height: 40px; */
+    border-radius: 50%;
+    margin: 16px;
+    padding: 16px;
+    background: #0059ff;
+}
+
+/* Contributors */
+#contributors > h1 {
+    text-align: center;
+    color:  #2D84DC;
+    font-size: 64px;
+    font-weight: normal;
+    margin: 192px 0 32px 0;
+}
+#contributors > hr {
+    width: 128px;
+    height: 3px;
+    background: #2D84DC;
+    border-radius: 12px;
+    margin-bottom: 42px;
+}
+#contributors > h3 {
+    color: #585858;
+    text-align: center;
+}
+#contributor-member {
+    display: block;
+    margin-top: 120px;
+}
+#contributor-member > .person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* download */
+#download > h1 {
+    text-align: center;
+    color:  #2D84DC;
+    font-size: 64px;
+    font-weight: normal;
+    margin: 192px 0 32px 0;
+}
+#download > hr {
+    width: 128px;
+    height: 3px;
+    background: #2D84DC;
+    border-radius: 12px;
+    margin-bottom: 42px;
+}
+#download > h3 {
+    color: #585858;
+    text-align: center;
+}
+#download > .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 72px;
+}
+
+/* Report bugs */
+#report > h1 {
+    text-align: center;
+    color:  #2D84DC;
+    font-size: 64px;
+    font-weight: normal;
+    margin: 192px 0 32px 0;
+}
+#report > hr {
+    width: 128px;
+    height: 3px;
+    background: #2D84DC;
+    border-radius: 12px;
+    margin-bottom: 42px;
+}
+#report > h3 {
+    color: #585858;
+    text-align: center;
+}
+#report > .bug-report {
+    color: #ddd;
+    text-align: center;
+}
+#support > h1 {
+    text-align: center;
+    color:  #2D84DC;
+    font-size: 64px;
+    font-weight: normal;
+    margin: 192px 0 32px 0;
+}
+#support > hr {
+    width: 128px;
+    height: 3px;
+    background: #2D84DC;
+    border-radius: 12px;
+    margin-bottom: 42px;
+}
+#support > h3 {
+    color: #585858;
+    text-align: center;
+}
+#support > #payment  {
+    margin-top: 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#support > #payment > .paytm > h3 {
+    color: #ddd;
+}
+#support > #payment > .paypal > h3 {
+    color: #ddd;
+}
+#final {
+    margin: 186px;
+}
+#final > h3 {
+    text-align: center;
+    color: #585858;
+}
+#final > #button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 72px;
+}
