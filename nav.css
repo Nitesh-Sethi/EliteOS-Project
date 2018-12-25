@@ -92,44 +92,52 @@ ul.nav {
 
 /* TEAM MEMBERS */
 #team-members {
-    display: block;
-    margin-top: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 960px;
+    margin: 1rem auto;
 }
+
+@media only screen and (max-width: 960px) {
+    #team-members {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 1rem auto;
+    }
+}
+
 #team-members > .person {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 2rem; 
+    margin-left: 2rem; 
+    background: #fff;
+    color: #151515;
+    overflow: hidden;
 }
+
 .set-image {
     width: 180px;
     height: 180px;
     border-radius: 50%;
     margin: 24px;
 }
-.person > h2 {
-    color: #ddd;
-    text-align: center;
-}
-.person > h3 {
-    color: #ddd;
-    text-align: center;
-}
 .person > #button {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
     margin: 12px;
 }
-/* font awesome icon */
 .fa {
-    /* width: 40px; */
-    /* height: 40px; */
     border-radius: 50%;
-    margin: 16px;
-    padding: 16px;
+    margin: 0 8px;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #0059ff;
-}
+} 
 
 /* Contributors */
 #contributors > h1 {
