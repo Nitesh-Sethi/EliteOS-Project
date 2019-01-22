@@ -1,93 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+/* color: #007bff; */
 body {
+    padding: 0;
+    margin: 0;
     background: #151515;
-    /* display: block; */
+    box-sizing: border-box;
+}
+/* header */
+header {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #151515;
+    border-bottom: 0.1px solid #312929;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
 }
 .icon {
-    display: block;
+    display: flex;
+    align-items: center;
+}
+.icon-elite {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 6px 16px;
 }
 .icon > span {
     color: #eee;
     font-size: 18px;
+    font-family: 'Raleway', sans-serif;
 }
-.icon-elite {
-    border-radius: 50%;
-    width: 4%;
-    height: 4%;
-    margin: 8px 16px 0 72px;
+.nav-bar ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
 }
-/* nav bar */
-.nav-item {
-    padding: 12px;
+.nav-bar ul li {
+    padding: 21px 12px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
 }
-ul.nav {
-    margin-right: 16px;
+.nav-item a {
+    text-decoration: none;
+    /* padding: 20px; */
+    color: #eee;
+    font-size: 1em;
 }
 .nav-item:hover {
     background: #0b0b0b;
 }
 /* EliteOS heading */
-.heading > h1 {
+#heading > h1 {
     text-align: center;
     color: #ddd;
     margin: 42px;
+    font-family: 'Raleway', sans-serif;
 }
-.heading > h3 {
+#heading > h3 {
     text-align: center;
     color: #ddd;
     margin-bottom: 42px;
+    font-family: 'Raleway', sans-serif;
 }
 /* button tag using flex */
 .content-center {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 }
 .content-center > button {
     color: #28059C;
     background: #2D84DC;
+    font-size: 1em;
     padding: 16px;
     border: 0px;
     border-radius: 8px;
     font-weight: 500;
+    font-family: 'Roboto', sans-serif;
 }
 /* Team elite */
-.team-elite > h1 {
+#team-elite > h1 {
     text-align: center;
     color:  #2D84DC;
     font-size: 64px;
     font-weight: normal;
     margin: 192px 0 32px 0;
+    font-family: 'Raleway', sans-serif;
 }
-.team-elite > hr {
+#team-elite > hr {
     width: 128px;
     height: 3px;
     background: #2D84DC;
     border-radius: 12px;
     margin-bottom: 42px;
+    border: none;
 }
-.team-elite > h3 {
+#team-elite > h3 {
     color: #585858;
     text-align: center;
+    font-family: 'Raleway', sans-serif;
 }
 /* team elite persons */
-.meet-team > h1 {
+#meet-team > h1 {
     text-align: center;
     color:  #2D84DC;
     font-size: 64px;
     font-weight: normal;
     margin: 192px 0 32px 0;
+    font-family: 'Raleway', sans-serif;
 }
-.meet-team > hr {
+#meet-team > hr {
     width: 128px;
     height: 3px;
     background: #2D84DC;
     border-radius: 12px;
     margin-bottom: 42px;
+    border: none;
 }
-.meet-team > h3 {
+#meet-team > h3 {
     color: #585858;
     text-align: center;
+    font-family: 'Raleway', sans-serif;
 }
 
 /* TEAM MEMBERS */
@@ -112,10 +154,13 @@ ul.nav {
     align-items: center;
     margin-bottom: 2rem; 
     margin-left: 2rem; 
-    background: #fff;
-    color: #151515;
+    /* background: #fff; */
+    color: #eee;
     overflow: hidden;
+    font-weight: lighter;
+    letter-spacing: 0.1em;
     border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .set-image {
@@ -147,6 +192,7 @@ ul.nav {
     font-size: 64px;
     font-weight: normal;
     margin: 192px 0 32px 0;
+    font-family: 'Raleway', sans-serif;
 }
 #contributors > hr {
     width: 128px;
@@ -154,10 +200,12 @@ ul.nav {
     background: #2D84DC;
     border-radius: 12px;
     margin-bottom: 42px;
+    border: none;
 }
 #contributors > h3 {
     color: #585858;
     text-align: center;
+    font-family: 'Raleway', sans-serif;
 }
 #contributor-member {
     display: grid;
@@ -171,10 +219,13 @@ ul.nav {
     align-items: center;
     margin-bottom: 2rem; 
     margin-left: 2rem; 
-    background: #fff;
-    color: #151515;
+    /* background: #fff; */
+    color: #eee;
+    font-weight: lighter;
+    letter-spacing: 0.1em;
     overflow: hidden;
     border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* download */
@@ -184,6 +235,7 @@ ul.nav {
     font-size: 64px;
     font-weight: normal;
     margin: 192px 0 32px 0;
+    font-family: 'Raleway', sans-serif;
 }
 #download > hr {
     width: 128px;
@@ -191,10 +243,12 @@ ul.nav {
     background: #2D84DC;
     border-radius: 12px;
     margin-bottom: 42px;
+    border: none;
 }
 #download > h3 {
     color: #585858;
     text-align: center;
+    font-family: 'Raleway', sans-serif;
 }
 #download > .button {
     display: flex;
@@ -210,6 +264,7 @@ ul.nav {
     font-size: 64px;
     font-weight: normal;
     margin: 192px 0 32px 0;
+    font-family: 'Raleway', sans-serif;
 }
 #report > hr {
     width: 128px;
@@ -217,14 +272,17 @@ ul.nav {
     background: #2D84DC;
     border-radius: 12px;
     margin-bottom: 42px;
+    border: none;
 }
 #report > h3 {
     color: #585858;
     text-align: center;
+    font-family: 'Raleway', sans-serif;
 }
 #report > .bug-report {
     color: #ddd;
     text-align: center;
+    font-family: 'Raleway', sans-serif;
 }
 #support > h1 {
     text-align: center;
@@ -232,6 +290,7 @@ ul.nav {
     font-size: 64px;
     font-weight: normal;
     margin: 192px 0 32px 0;
+    font-family: 'Raleway', sans-serif;
 }
 #support > hr {
     width: 128px;
@@ -239,10 +298,12 @@ ul.nav {
     background: #2D84DC;
     border-radius: 12px;
     margin-bottom: 42px;
+    border: none;
 }
 #support > h3 {
     color: #585858;
     text-align: center;
+    font-family: 'Raleway', sans-serif;
 }
 #support > #payment  {
     margin-top: 96px;
@@ -250,11 +311,10 @@ ul.nav {
     flex-direction: column;
     align-items: center;
 }
-#support > #payment > .paytm > h3 {
-    color: #ddd;
-}
+#support > #payment > .paytm > h3,
 #support > #payment > .paypal > h3 {
     color: #ddd;
+    font-family: 'Raleway', sans-serif;
 }
 #final {
     margin: 186px;
@@ -262,6 +322,7 @@ ul.nav {
 #final > h3 {
     text-align: center;
     color: #585858;
+    font-family: 'Raleway', sans-serif;
 }
 #final > #button {
     display: flex;
